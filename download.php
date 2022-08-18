@@ -7,7 +7,7 @@ header("Cache-Control: private",false);
 header("Content-Type: application/octet-stream");
 header("Content-Disposition: attachment; filename=".basename($file));
 header("Content-Transfer-Encoding: binary");
-$fd = fopen($file, "rb");  //大檔案下載的解決方法～readfile($file)會出問題～
+$fd = fopen($file, "rb");  //大檔案下載的解決方法～readfile($file)會出問題～test
 if($fd)
 {
     ob_end_clean();
